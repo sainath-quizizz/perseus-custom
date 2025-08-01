@@ -1,0 +1,13 @@
+**/node_modules
+flow-typed/**/*.js
+coverage
+**/dist
+packages/**/build
+**/*.template
+**/package.json
+**/*.md
+vendor
+LICENSE
+**/__genfiles__
+storybook-static
+cypress/
