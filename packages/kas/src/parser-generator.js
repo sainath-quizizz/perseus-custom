@@ -86,6 +86,10 @@ var grammar = {
             ["\\\\sech",            "yytext = \"sech\"; return \"TRIG\""],
             ["\\\\coth",            "yytext = \"tanh\"; return \"TRIG\""],
             ["pi",                  "return \"CONST\""],
+            ["e", 'return "CONST"'],
+            ["\u2107", 'yytext = "E"; return "CONST"'], // euler
+            ["\\\\e", 'yytext = "E"; return "CONST"'],
+            ["\u0131", 'yytext = "i"; return "CONST"'], // i
             ["\u03C0",              "yytext = \"pi\"; return \"CONST\""],   // pi
             ["\\\\pi",              "yytext = \"pi\"; return \"CONST\""],
             ["theta",               "return \"VAR\""],
